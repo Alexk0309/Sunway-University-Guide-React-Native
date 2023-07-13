@@ -50,7 +50,7 @@ const SignupScreen = ({navigation}: any) => {
       <View style={styles.signInContainer}>
         <Text style={styles.signInLabel}>Already have an account?</Text>
         <TouchableOpacity onPress={navigateToLogin}>
-          <Text style={[styles.signInLabel, {color: 'orange'}]}> Sign In.</Text>
+          <Text style={FSigninLabel}> Sign In.</Text>
         </TouchableOpacity>
       </View>
     </View>
@@ -97,5 +97,10 @@ const styles = StyleSheet.create({
     fontSize: 20,
   },
 });
+
+const FSigninLabel = StyleSheet.flatten([
+  styles.signInLabel,
+  {color: 'orange'},
+]);
 
 export default SignupScreen;
