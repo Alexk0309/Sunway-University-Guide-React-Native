@@ -9,18 +9,18 @@ import {
 } from 'react-native';
 import {AuthContext} from '../../auth/model/authProvider';
 
-const LoginScreen = ({navigation}: any) => {
+const SignupScreen = ({navigation}: any) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const {login} = useContext(AuthContext);
+  const {register} = useContext(AuthContext);
 
-  const handleLogin = () => {
-    login(email, password);
+  const handleSignup = () => {
+    register(email, password);
   };
 
-  const navigateToSignUp = () => {
-    navigation.navigate('Signup');
+  const navigateToLogin = () => {
+    navigation.navigate('Login');
   };
   return (
     <View style={styles.container}>
@@ -42,15 +42,15 @@ const LoginScreen = ({navigation}: any) => {
         />
       </View>
       <View style={styles.loginButton}>
-        <TouchableOpacity onPress={handleLogin}>
-          <Text style={styles.loginLabel}>Login</Text>
+        <TouchableOpacity onPress={handleSignup}>
+          <Text style={styles.loginLabel}>Sign Up</Text>
         </TouchableOpacity>
       </View>
 
-      <View style={styles.signUpContainer}>
-        <Text style={styles.signUpLabel}>Don't have an account?</Text>
-        <TouchableOpacity onPress={navigateToSignUp}>
-          <Text style={[styles.signUpLabel, {color: 'orange'}]}> Sign up.</Text>
+      <View style={styles.signInContainer}>
+        <Text style={styles.signInLabel}>Already have an account?</Text>
+        <TouchableOpacity onPress={navigateToLogin}>
+          <Text style={[styles.signInLabel, {color: 'orange'}]}> Sign In.</Text>
         </TouchableOpacity>
       </View>
     </View>
@@ -88,14 +88,14 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     backgroundColor: '#012c7a',
   },
-  signUpContainer: {
+  signInContainer: {
     marginTop: 50,
     display: 'flex',
     flexDirection: 'row',
   },
-  signUpLabel: {
+  signInLabel: {
     fontSize: 20,
   },
 });
 
-export default LoginScreen;
+export default SignupScreen;
