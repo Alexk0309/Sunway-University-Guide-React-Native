@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "587069396503",
+    "project_id": "sunwayarmap",
+    "storage_bucket": "sunwayarmap.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:587069396503:android:80898f30bd26a8b302ae52",
+        "android_client_info": {
+          "package_name": "com.tourguidern"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "587069396503-1sp5h57eg48met9toleeht51urocmtnu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBmQAXSJOgEJb3tGELSp-uGFX4zG0B4E4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "587069396503-1sp5h57eg48met9toleeht51urocmtnu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
