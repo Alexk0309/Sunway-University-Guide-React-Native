@@ -4,7 +4,7 @@ import {Image, StyleSheet, View} from 'react-native';
 const Splash = ({navigation}: {navigation: any}) => {
   useEffect(() => {
     setTimeout(() => {
-      navigation.replace('Home');
+      navigation.replace('Login');
     }, 2000);
   });
 

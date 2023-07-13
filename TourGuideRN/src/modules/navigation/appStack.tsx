@@ -1,11 +1,11 @@
 import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import FeedScreen from '../../feed/view/feedScreen';
-import ARScreen from '../../ar/view/arScreen';
+import FeedScreen from '../feed/view/feedScreen';
+import ARScreen from '../ar/view/arScreen';
 
 const Tab = createBottomTabNavigator();
 
-const TabNavigation = () => {
+const AppStack = () => {
   return (
     <Tab.Navigator>
       <Tab.Screen name="Feed" component={FeedScreen} />
@@ -14,4 +14,4 @@ const TabNavigation = () => {
   );
 };
 
-export default TabNavigation;
+export default AppStack;

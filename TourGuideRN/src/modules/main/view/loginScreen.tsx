@@ -1,0 +1,79 @@
+import React, {useState} from 'react';
+import {
+  Image,
+  StyleSheet,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  View,
+} from 'react-native';
+
+const LoginScreen = ({navigation}: any) => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
+  const handleLogin = () => {
+    navigation.navigate('Home');
+  };
+  return (
+    <View style={styles.container}>
+      <View style={styles.logoContainer}>
+        <Image source={require('../../../assets/images/SunwayARMapLogo.png')} />
+      </View>
+      <View style={styles.formContainer}>
+        <TextInput
+          style={styles.textInput}
+          placeholder="Email"
+          autoCapitalize="none"
+          onChangeText={x => setEmail(x)}
+        />
+        <TextInput
+          style={styles.textInput}
+          placeholder="Password"
+          onChangeText={x => setPassword(x)}
+          secureTextEntry={true}
+        />
+      </View>
+      <View style={styles.loginButton}>
+        <TouchableOpacity onPress={handleLogin}>
+          <Text style={styles.loginLabel}>Login</Text>
+        </TouchableOpacity>
+      </View>
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    display: 'flex',
+    alignItems: 'center',
+  },
+  logoContainer: {
+    marginTop: 80,
+  },
+  formContainer: {
+    display: 'flex',
+    marginTop: 30,
+  },
+  textInput: {
+    marginBottom: 10,
+    width: 300,
+    fontSize: 20,
+    borderWidth: 1,
+    borderRadius: 10,
+  },
+  loginLabel: {
+    textAlign: 'center',
+    fontSize: 30,
+    color: 'white',
+    padding: 5,
+  },
+  loginButton: {
+    width: 150,
+    marginTop: 10,
+    borderRadius: 10,
+    backgroundColor: '#012c7a',
+  },
+});
+
+export default LoginScreen;
