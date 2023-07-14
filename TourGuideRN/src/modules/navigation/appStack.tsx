@@ -6,6 +6,7 @@ import ProfileScreen from '../auth/view/profileScreen';
 
 import MaterialIcon from 'react-native-vector-icons/MaterialIcons';
 import FontAwesome5Icon from 'react-native-vector-icons/FontAwesome5';
+import DirectoryStack from './directoryStack';
 
 const Tab = createBottomTabNavigator();
 
@@ -23,13 +24,24 @@ const AppStack = () => {
               return (
                 <FontAwesome5Icon name="user-alt" size={25} color={color} />
               );
+            case 'DirectoryMenu':
+              return <MaterialIcon name="menu-book" size={30} color={color} />;
           }
         },
         tabBarShowLabel: false,
         tabBarActiveTintColor: '#266fff',
         tabBarInactiveTintColor: 'gray',
       })}>
-      <Tab.Screen name="Feed" component={FeedScreen} />
+      <Tab.Screen
+        name="Feed"
+        component={FeedScreen}
+        options={{title: "What's New"}}
+      />
+      <Tab.Screen
+        name="DirectoryMenu"
+        component={DirectoryStack}
+        options={{headerShown: false}}
+      />
       <Tab.Screen name="ARMap" component={ARScreen} />
       <Tab.Screen name="Profile" component={ProfileScreen} />
     </Tab.Navigator>
