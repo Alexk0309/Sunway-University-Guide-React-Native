@@ -7,7 +7,7 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
-import {AuthContext} from '../../auth/model/authProvider';
+import {AuthContext} from '../../auth/authProvider';
 
 const LoginScreen = ({navigation}: any) => {
   const [email, setEmail] = useState('');
@@ -61,6 +61,8 @@ const styles = StyleSheet.create({
   container: {
     display: 'flex',
     alignItems: 'center',
+    backgroundColor: 'white',
+    height: '100%',
   },
   logoContainer: {
     marginTop: 80,

@@ -1,5 +1,5 @@
 import React, {useContext, useEffect, useState} from 'react';
-import {AuthContext} from '../auth/model/authProvider';
+import {AuthContext} from '../auth/authProvider';
 import auth from '@react-native-firebase/auth';
 import {NavigationContainer} from '@react-navigation/native';
 import AuthStack from './authStack';

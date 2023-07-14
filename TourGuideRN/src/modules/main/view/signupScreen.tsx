@@ -7,7 +7,7 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
-import {AuthContext} from '../../auth/model/authProvider';
+import {AuthContext} from '../../auth/authProvider';
 
 const SignupScreen = ({navigation}: any) => {
   const [email, setEmail] = useState('');
