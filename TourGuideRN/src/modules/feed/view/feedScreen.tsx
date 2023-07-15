@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {FlatList, StyleSheet, View} from 'react-native';
+import {FlatList, View} from 'react-native';
 import Feedcard from '../components/feedCard';
 import firestore from '@react-native-firebase/firestore';
 
@@ -42,47 +42,22 @@ const FeedScreen = () => {
   });
 
   return (
-    <View style={styles.imgContainer}>
-      <View>
-        <FlatList
-          data={posts}
-          renderItem={({item}: any) => (
-            <Feedcard
-              title={item.title}
-              imageURL={item.imageURL}
-              type={item.type}
-              user={item.user}
-              desc={item.desc}
-            />
-          )}
-          keyExtractor={item => item.id}
-        />
-      </View>
+    <View>
+      <FlatList
+        data={posts}
+        renderItem={({item}: any) => (
+          <Feedcard
+            title={item.title}
+            imageURL={item.imageURL}
+            type={item.type}
+            user={item.user}
+            desc={item.desc}
+          />
+        )}
+        keyExtractor={item => item.id}
+      />
     </View>
   );
 };
-
-const styles = StyleSheet.create({
-  imgContainer: {
-    flex: 1,
-    alignItems: 'center',
-  },
-  image: {
-    height: 250,
-    width: 350,
-  },
-  buttonContainer: {
-    marginTop: 10,
-    justifyContent: 'center',
-    backgroundColor: 'gray',
-    width: 200,
-    height: 100,
-  },
-  buttonText: {
-    fontSize: 50,
-    color: 'white',
-    textAlign: 'center',
-  },
-});
 
 export default FeedScreen;
