@@ -17,7 +17,7 @@ const FeedScreen = () => {
           .then(querySnapshot => {
             // console.log('Total posts: ' + querySnapshot.size);
             querySnapshot.forEach(doc => {
-              const {user, title, type, desc, imageURL} = doc.data();
+              const {user, title, type, desc, imageURL, link} = doc.data();
               list.push({
                 id: doc.id,
                 user: user,
@@ -25,6 +25,7 @@ const FeedScreen = () => {
                 type: type,
                 desc: desc,
                 imageURL: imageURL,
+                link: link,
               });
             });
           });
@@ -52,6 +53,7 @@ const FeedScreen = () => {
             type={item.type}
             user={item.user}
             desc={item.desc}
+            link={item.link}
           />
         )}
         keyExtractor={item => item.id}
