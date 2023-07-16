@@ -1,12 +1,13 @@
 import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import FeedScreen from '../feed/view/feedScreen';
-import ARScreen from '../ar/view/arScreen';
 import ProfileScreen from '../auth/view/profileScreen';
+import ARStack from './arStack';
 
 import MaterialIcon from 'react-native-vector-icons/MaterialIcons';
 import FontAwesome5Icon from 'react-native-vector-icons/FontAwesome5';
 import DirectoryStack from './directoryStack';
+
 
 const Tab = createBottomTabNavigator();
 
@@ -42,7 +43,11 @@ const AppStack = () => {
         component={DirectoryStack}
         options={{headerShown: false}}
       />
-      <Tab.Screen name="ARMap" component={ARScreen} />
+      <Tab.Screen
+        name="ARMap"
+        component={ARStack}
+        options={{headerShown: false}}
+      />
       <Tab.Screen name="Profile" component={ProfileScreen} />
     </Tab.Navigator>
   );
