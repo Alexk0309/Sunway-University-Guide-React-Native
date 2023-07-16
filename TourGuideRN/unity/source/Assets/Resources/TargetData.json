@@ -1,0 +1,88 @@
+﻿{
+    "TargetList": [
+        {
+            "Name": "Entrance",
+            "FloorNumber": 0,
+            "Position": {
+                "x": 0.59,
+                "y": -5.74,
+                "z": 5.30
+            },
+            "Rotation": {
+                "x": 0.00,
+                "y": 0.00,
+                "z": 0.00
+            }
+        },
+        {
+            "Name": "Makerspace",
+            "FloorNumber": 0,
+            "Position": {
+                "x": -7.19,
+                "y": -6.18,
+                "z": 20.44
+            },
+            "Rotation": {
+                "x": 0.00,
+                "y": 0.00,
+                "z": 0.00
+            }
+        },
+        {
+            "Name": "Fresco",
+            "FloorNumber": 0,
+            "Position": {
+                "x": -9,
+                "y": -6.186153,
+                "z": -20.2
+            },
+            "Rotation": {
+                "x": 0.00,
+                "y": 90.00,
+                "z": 0.00
+            }
+        },
+        {
+            "Name": "Library",
+            "FloorNumber": 0,
+            "Position": {
+                "x": -25.66,
+                "y": -6.18,
+                "z": 17.27
+            },
+            "Rotation": {
+                "x": 0.00,
+                "y": 0.00,
+                "z": 0.00
+            }
+        },
+        {
+            "Name": "MLibrary",
+            "FloorNumber": 1,
+            "Position": {
+                "x": -19.12,
+                "y": -6.18,
+                "z": 17.1
+            },
+            "Rotation": {
+                "x": 0.00,
+                "y": -90.00,
+                "z": 0.00
+            }
+        },
+        {
+            "Name": "Starbucks",
+            "FloorNumber": 1,
+            "Position": {
+                "x": -2.32,
+                "y": -6.18,
+                "z": 21.17
+            },
+            "Rotation": {
+                "x": 0.00,
+                "y": 0.00,
+                "z": 0.00
+            }
+        }
+    ]
+}

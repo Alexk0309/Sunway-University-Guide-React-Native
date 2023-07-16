@@ -18,7 +18,7 @@ const Feedcard = ({title, imageURL, type, user, desc}: any) => (
       <Text style={styles.descriptionLabel}>{desc}</Text>
       <View style={styles.descriptionButton}>
         <TouchableOpacity>
-          <Text>Tap to know more</Text>
+          <Text style={styles.knowMoreLabel}>Tap to know more</Text>
         </TouchableOpacity>
       </View>
     </View>
@@ -66,5 +66,8 @@ const styles = StyleSheet.create({
   typeLabel: {
     color: 'black',
     fontSize: 15,
+  },
+  knowMoreLabel: {
+    color: '#858585',
   },
 });

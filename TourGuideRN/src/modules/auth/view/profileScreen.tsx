@@ -27,6 +27,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   profileLabel: {
+    color: 'black',
     marginTop: 50,
     fontSize: 20,
   },

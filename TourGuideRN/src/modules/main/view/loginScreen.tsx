@@ -72,6 +72,7 @@ const styles = StyleSheet.create({
     marginTop: 30,
   },
   textInput: {
+    color: 'black',
     marginBottom: 10,
     width: 300,
     fontSize: 20,
@@ -96,6 +97,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   signUpLabel: {
+    color: 'black',
     fontSize: 20,
   },
 });
