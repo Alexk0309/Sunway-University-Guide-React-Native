@@ -7,6 +7,9 @@ A mobile-based AR indoor navigation specifically designed for use on Sunway Univ
 <br/>**NOTE**
 <br/>This module is available only on Android devices. 
 
+# Example
+![alt text](https://github.com/Alexk0309/Sunway-University-Guide-React-Native/blob/main/image/example.png?raw=true)
+
 # Installation
 ## Unity
 1. Export Unity app to `[project_root]/unity/builds/android`
