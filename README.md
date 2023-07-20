@@ -2,7 +2,9 @@
 
 A mobile-based AR indoor navigation specifically designed for use on Sunway University campus. The application is intended to identify users' locations and guide them to their desired destinations by overlaying AR directions onto the real-world camera view. 
 
-**NOTE**
+<br/>Credits to: https://github.com/azesmway/react-native-unity
+
+<br/>**NOTE**
 <br/>This module is available only on Android devices. 
 
 # Installation
