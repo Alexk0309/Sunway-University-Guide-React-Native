@@ -8,7 +8,6 @@ import MaterialIcon from 'react-native-vector-icons/MaterialIcons';
 import FontAwesome5Icon from 'react-native-vector-icons/FontAwesome5';
 import DirectoryStack from './directoryStack';
 
-
 const Tab = createBottomTabNavigator();
 
 const AppStack = () => {

@@ -140,28 +140,4 @@ public class QrCodeRecenter : MonoBehaviour
         VenueOptionsPanel.SetActive(panelOptionsActive);
     }
 
-    //private void SetActiveFloors(string targetText)
-    //{
-    //    navigationTargetDropdown.ClearOptions();
-    //    string[] groundFloor = { "Entrance", "Makerspace", "Fresco", "Library" };
-    //    string[] mezzanineFloor = { "MezzanineLibrary", "Starbucks" };
-
-    //    if (groundFloor.Contains(targetText)) {
-    //        navigationTargetDropdown.options.Add(new Dropdown.OptionData("Select Venue"));
-    //        navigationTargetDropdown.options.Add(new Dropdown.OptionData("Entrance"));
-    //        navigationTargetDropdown.options.Add(new Dropdown.OptionData("Makerspace"));
-    //        navigationTargetDropdown.options.Add(new Dropdown.OptionData("Fresco"));
-    //        navigationTargetDropdown.options.Add(new Dropdown.OptionData("Library"));
-    //    } else if (mezzanineFloor.Contains(targetText))
-    //    {
-    //        navigationTargetDropdown.options.Add(new Dropdown.OptionData("Select Venue"));
-    //        navigationTargetDropdown.options.Add(new Dropdown.OptionData("MezzanineLibrary"));
-    //        navigationTargetDropdown.options.Add(new Dropdown.OptionData("Starbucks"));
-    //    }
-    //}
-
-    //public void ChangeActiveFloor(string floorEntrance)
-    //{
-    //    SetQrCodeRecenterTarget(floorEntrance);
-    //}
 }
